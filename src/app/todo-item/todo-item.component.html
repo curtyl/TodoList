@@ -1,0 +1,10 @@
+<div class="view">
+  <input 	class			= "toggle"
+          type			= "checkbox"
+          name			= "fait"
+          [ngModel] = "item.Done"
+          (ngModelChange)="itemDone(item,$event)"
+  />
+  <label 	class="texte">{{label}}</label>
+  <button (click)="itemDelete(item)" class="destroy"></button>
+</div>
